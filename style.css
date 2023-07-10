@@ -1,0 +1,399 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Raleway:wght@500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color: brown;
+  border-radius: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  box-shadow: 0px 10px 10px grey;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+/*Home */
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left img {
+  width: 400px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  width: 80%;
+}
+
+.center1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #6d1818;
+  color: wheat;
+}
+
+.sitefooter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sitefooter .footleft,
+.footright {
+  width: 50%;
+  padding: 1rem;
+}
+
+.sitefooter ul {
+  flex-direction: column
+}
+
+.sitefooter li {
+  margin: 0.3rem;
+}
+
+.footmiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footmiddle a {
+  color: aliceblue;
+
+  border: 2px solid;
+  padding: 8px;
+  border-radius: 48%;
+
+}
+
+.footmiddle ul li {
+  margin: 0 1rem;
+
+}
+
+.footmiddle ul i {
+  font-family: 'FontAwesome';
+}
+
+.hover-underline-animation {
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom left;
+  transition: transform .5s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+
+.reactangle {
+  background-color: #c1daef;
+  width: 100%;
+  height: 11rem;
+  margin: 5rem 0rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.reactimg {
+  height: 32rem;
+  float: right;
+  margin-right: 2rem;
+}
+
+.contactform {
+  width: 26rem;
+  background-color: white;
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+}
+
+.contactform .controlborder {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 9px;
+  width: 75%;
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.contactsec {
+  height: 110vh;
+}
+
+.contact button {
+  background: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background: white;
+  color: black;
+}
+
+.guide {
+
+  background-image: url("https://sugermint.com/wp-content/uploads/2021/05/IT-Companies-in-India.jpg");
+}
+
+.guidebox {
+  background: white;
+  width: 95%;
+  opacity: 90%;
+  padding: 1rem;
+}
+
+.InfoContainer {
+  background-image: url("https://getfive.com/wp-content/uploads/2019/08/job-searching.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#icon{
+  font-family: 'FontAwesome'
+}
+/* }
+.icons{
+    display: flex;
+    column-gap: 25px;
+}
+.hovericon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+.hovericon :hover{
+    outline-offset:4px;
+} */
+
+/* .hovericon i{
+    margin: auto;
+}
+.hovericon :hover i{
+    animation: shake 0.25s;
+} */
+
+.hovericon:hover {
+  background-color: yellow;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  color: #6d1818;
+}
+
+#bar,
+#crossbar {
+  color: #ffff;
+  font-size: 1.7rem;
+  display: none;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.slider {
+  height: auto;
+  display: block;
+  text-align: center;
+  transition: all 1s ease;
+}
+.students{
+  margin: 3rem 9rem;
+  
+}
+.students h2{
+  margin: 14px 17px;
+}
+@keyframes shake {
+  10% {
+    transform: rorate(15deg);
+  }
+
+  20% {
+    transform: rorate(-15deg);
+  }
+
+  30% {
+    transform: rorate(15deg);
+  }
+
+  40% {
+    transform: rorate(-15deg);
+  }
+}
+
+@media (max-width:855px) {
+  .center {
+    font-size: 78%;
+    padding: 3rem;
+
+  }
+
+  .home .left img {
+    MARGIN-LEFT: 3REM;
+  }
+}
+
+@media (max-width:600px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .footmiddle {
+    padding: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 84%;
+    line-height: 2.3rem;
+  }
+
+  .left img {
+    margin: 2rem 0rem;
+  }
+}
+.dropdown{
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.button{
+  margin: 2rem 2rem;
+}
+@media (max-width:500px) {
+  .sitefooter {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width:500px) {
+  body .home {
+    margin-right: -1rem;
+  }
+
+  #bar {
+    display: block;
+  }
+
+  .navbar .removenav {
+    display: none;
+  }
+
+  #item {
+    flex-direction: column;
+    height: 4rem;
+    align-items: center;
+
+  }
+
+  .guidebox {
+    font-size: 82%
+  }
+
+  .contactform {
+    top: 18rem;
+    left: 1rem;
+  }
+}
+
+@media (max-width:450px) {
+  .home .left img {
+    width: 292px;
+  }
+
+  .contactform {
+    width: 20rem;
+    border: none;
+  }
+}
+
+@media (max-width:363px) {
+  body .home {
+    margin-right: 2rem;
+  }
+}
